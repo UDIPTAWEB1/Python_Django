@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="/static/css/signup.css">
+
+    <!-- icon url -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Shopeeze | Log in or sign up</title>
+</head>
+
+<body>
+    <header><a href="" id="logo">shopeeze</a></header>
+
+    <div class="wrapper">
+
+        <!-- signup 1st page -->
+        <div class="form-box ">
+            <h2>Sign up</h2>
+            <form class="signup1-box">
+                <div class="input-box">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" required>
+                    <label>Full name</label>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-phone'></i>
+                    <input type="number" required>
+                    <label>Phone no.</label>
+                </div>
+                <div class="input-box">
+                    <i class='bx bx-at'></i>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="gender-dob">
+                    <select name="" id="" required>
+                        <option value="" disabled selected hidden>Gender</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Others</option>
+                    </select>
+
+                    <input type="text" onfocus="this.type='date'" onblur="this.type='text'" placeholder="Date Of Birth"
+                        required id="birthdate">
+                    <i class='bx bx-calendar'></i>
+                </div>
+                <div class="btns-container">
+                    <label class="login-link">
+                        <a href="/login">
+                            <i class='bx bx-left-arrow-alt'></i>
+                            <span>Go back to login</span>
+                        </a>
+                    </label>
+                    <button id="next" disabled>Next</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- signup 2nd page -->
+        <div class="form-box">
+
+            <form class="signup2-box">
+                <p>You're almost done !</p>
+                <div class="input-box">
+                    <input type="password" required id="password-field">
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span onclick="showPassword()">
+                        <i class='bx bxs-hide' id="hide-icon"></i>
+                        <i class='bx bxs-show' id="show-icon"></i>
+                    </span>
+
+                    <input type="password" required id="passwordcon-field">
+                    <label>Confirm password</label>
+                </div>
+                <div class="message-box">
+                    <small id="error">Passwords don't match</small>
+                    <small id="success">Passwords match !</small>
+                </div>
+
+                <div class="terms-box">
+                    <small>
+                        By clicking <b>sign up</b>, you agree to our <b>terms & conditions</b>.
+                    </small>
+                </div>
+                <div class="btns-container">
+                    <label class="login-link" id="back-btn">
+                        <a>
+                            <i class='bx bx-left-arrow-alt'></i>
+                            <span>Back</span>
+                        </a>
+                    </label>
+
+                    <button id="signup-link" type="submit" value="submit" disabled>Sign up</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="/static/js/signup.js"></script>
+</body>
+
+</html>

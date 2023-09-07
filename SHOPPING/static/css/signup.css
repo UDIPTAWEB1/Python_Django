@@ -1,0 +1,258 @@
+/* font url */
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(/static/images/login-bg.jpg);
+}
+
+header {
+    padding: 1rem 5%;
+}
+
+#logo {
+    font-family: 'lily script one', cursive;
+    color: #000;
+    font-size: xx-large;
+}
+
+.wrapper {
+    width: 420px;
+    height: 551px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(20px);
+    border: rgba(255, 255, 255, 0.5) solid 2px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+}
+
+.form-box {
+    width: 100%;
+    padding-inline: 50px;
+    padding-block: 2.5rem;
+}
+
+.form-box h2 {
+    color: #162938;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 3rem;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #22A3FF;
+    margin: 26px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-40%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    opacity: .7;
+    transition: ease 0.3s;
+}
+
+.input-box input {
+    width: 370px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0 6rem 0 2px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+    color: #22A3FF;
+    opacity: 1;
+    font-size: .9em;
+}
+
+.input-box i {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #22A3FF;
+    line-height: 57px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: none;
+}
+
+.gender-dob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gender-dob select {
+    width: 35%;
+}
+
+.gender-dob input {
+    width: 50%;
+    padding-right: 8px;
+}
+
+.gender-dob select,
+.gender-dob input {
+    border: none ;
+    border-bottom: 2px solid #22A3FF;
+    background-color: transparent;
+    font-size: 1em;
+    outline: none;
+    height: 50px;
+    color: #162938;
+}
+
+::-webkit-calendar-picker-indicator {
+    z-index: 999;
+}
+
+.gender-dob input:focus~i{
+    display: none;
+}
+
+.gender-dob i {
+    position: absolute;
+    transform: translateX(-50%);
+    right: 51.8px;
+    font-size: 1em;
+    color: #22A3FF;
+}
+
+
+.btns-container {
+    margin-top: 3.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns-container a {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 500;
+    color: #006abc;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+.btns-container a:hover span{
+    font-size: 1.02em;
+}
+
+.btns-container a:hover i{
+    font-size: 1.3em;
+}
+
+.btns-container button{
+    font-size: 1.02em;
+    font-weight: 500;
+    background-color: transparent;
+    border: solid 2.5px #22A3FF;
+    border-radius: 8px;
+    height: 40px;
+    width: 100px;
+    color: #22A3FF;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+.btns-container button:enabled:hover{
+    background-color: #22A3FF;
+    color: aliceblue;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.btns-container a i {
+    font-size: 1.2em;
+}
+
+.signup2-box {
+    margin-top: 4rem;
+}
+
+.signup2-box p {
+    font-size: .9em;
+    text-align: center;
+}
+
+.signup2-box small,
+.signup2-box p {
+    opacity: .7;
+    font-weight: 500;
+}
+
+.message-box {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    text-align: start;
+    width: 100%;
+}
+
+.terms-box {
+    margin-top: 3rem;
+}
+
+#show-icon {
+    display: none;
+}
+
+#error {
+    color: red;
+    opacity: 1;
+    display: none;
+}
+
+#success {
+    color: green;
+    opacity: 1;
+    display: none;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
+
+button:enabled{
+    cursor: pointer;
+}
+
+.active .signup1-box{
+    transform: translateX(-400px);
+}
+
+.active .signup2-box {
+    transform: translateX(-415px);
+}

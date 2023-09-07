@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- icon url -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="/static/css/home.css">
+
+
+    <!-- title -->
+    <title>Shopeeze | shop easy on shopeeze</title>
+</head>
+
+<body>
+    <header>
+        <a href="" id="logo">shopeeze</a>
+
+        <div class="search-container">
+            <input type="text" placeholder="search here.." class="search-field">
+            <button class="search-btn"><i class='bx bx-search-alt'></i></button>
+        </div>
+
+        <nav>
+            <a href="">Home</a>
+            <div class="categories">
+                Categories
+                <i class='bx bx-chevron-down'></i>
+            </div>
+            <a href="">Support</a>
+
+            <a href="login/"><Button class="login-btn" href="login.html">Log in</Button></a>
+
+            <div>
+                <a href=""><i class='bx bx-cart'></i></a>
+                <a href=""><i class='bx bx-heart'></i></a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- slider using swiper -->
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/static/images/slider1.jpg" alt="">
+                <div class="txt-slider-1">
+                    <h3>Special offer</h3>
+                    <h2>Super value deals</h2>
+                    <h2 class="highlight-s1">on women's fashion</h2>
+                    <p>upto 70% off !</p>
+
+                    <button class="shop-btn shop-btn-c-s1">Shop now <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="/static/images/slider2.jpg" alt="">
+                <div class="txt-slider-2">
+                    <h3>Special offer</h3>
+                    <h2>Up to 40% off</h2>
+                    <h2 class="highlight-s2">on men's fashion</h2>
+                    <p>shop before offer end !</p>
+
+                    <button class="shop-btn shop-btn-c-s2">Shop now <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="/static/images/slider3.jpg" alt="">
+                <div class="txt-slider-1">
+                    <h3>Monthly offer</h3>
+                    <h2>Great deals</h2>
+                    <h2 class="highlight-s3">on footwears</h2>
+                    <p>upto 60% off !</p>
+
+                    <button class="shop-btn shop-btn-c-s3">Shop now <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="/static/images/slider4.jpg" alt="">
+                <div class="txt-slider-1">
+                    <h3>Special offer</h3>
+                    <h2>Cashback upto 5000</h2>
+                    <h2 class="highlight-s4">on jewellery</h2>
+                    <p>upto 70% off !</p>
+
+                    <button class="shop-btn shop-btn-c-s4">Shop now <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="/static/images/slider5.jpg" alt="">
+                <div class="txt-slider-2">
+                    <h3>Special offer</h3>
+                    <h2>Super value deals</h2>
+                    <h2 class="highlight-s5">on women's fashion</h2>
+                    <p>upto 70% off !</p>
+
+                    <button class="shop-btn shop-btn-c-s5">Shop now <i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- initialize swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
